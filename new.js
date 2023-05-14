@@ -74,10 +74,13 @@ var button4 = document.getElementById("button4");
 var span6 = document.getElementById("span6");
 
 button4.onclick = function () {
-    var number4 = parseInt(document.getElementById("number4Input").value);
-    var number5 = parseInt(document.getElementById("number5Input").value);
+    var number4 = +document.getElementById("number4Input").value;
 
-    var output5 = number4 + number5
+    var hangdv = number4 % 10;
+    var hangchuc = Math.floor(number4/10);
+    var tong2kyso = hangdv + hangchuc;
 
-    span6.innerHTML = output5
+ 
+
+    span6.innerHTML =  tong2kyso
 }
