@@ -67,3 +67,17 @@ button3.onclick = function () {
     alert('Em không biết ghi 2 kết quả cùng 1 dòng như gợi ý nên chơi 2 dòng luôn ^_^')
 
 };
+
+
+// bài 5
+var button4 = document.getElementById("button4");
+var span6 = document.getElementById("span6");
+
+button4.onclick = function () {
+    var number4 = parseInt(document.getElementById("number4Input").value);
+    var number5 = parseInt(document.getElementById("number5Input").value);
+
+    var output5 = number4 + number5
+
+    span6.innerHTML = output5
+}
