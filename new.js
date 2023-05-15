@@ -51,7 +51,6 @@ button2.onclick = function () {
 // bài 4
 var button3 = document.getElementById("button3");
 var span4 = document.getElementById("span4");
-var span5 = document.getElementById("span5");
 
 button3.onclick = function () {
     var cd = parseInt(document.getElementById("cdInput").value);
@@ -61,10 +60,9 @@ button3.onclick = function () {
     var chuvi = (cd + cr) * 2;
     var dientich = (cd * cr);
 
-    span4.innerHTML = chuvi
-    span5.innerHTML = dientich
+    span4.innerHTML = "chu vi: " + chuvi  + " diện tích: " + dientich
     
-    alert('Em không biết ghi 2 kết quả cùng 1 dòng như gợi ý nên chơi 2 dòng luôn ^_^')
+    
 
 };
 
@@ -78,6 +76,8 @@ button4.onclick = function () {
 
     var hangdv = number4 % 10;
     var hangchuc = Math.floor(number4/10);
+
+    
     var tong2kyso = hangdv + hangchuc;
 
  
