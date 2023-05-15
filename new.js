@@ -9,7 +9,7 @@ btn.onclick = function () {
 
     var output = money1 * workingday;
 
-    span1.innerHTML = output
+    span1.innerHTML = output + "vnđ"
 };
 
 
@@ -40,9 +40,10 @@ var span3 = document.getElementById("span3");
 button2.onclick = function () {
     var dolas = document.getElementById("dolasInput").value;
 
-    var output3 = dolas * 23.500
 
-    span3.innerHTML = output3
+    var output3 = dolas * 23500
+
+    span3.innerHTML = output3 + "vnđ"
 };
 
 
@@ -60,7 +61,7 @@ button3.onclick = function () {
     var chuvi = (cd + cr) * 2;
     var dientich = (cd * cr);
 
-    span4.innerHTML = "chu vi: " + chuvi  + " diện tích: " + dientich
+    span4.innerHTML = "chu vi: " + chuvi  + "; diện tích: " + dientich
     
     
 
